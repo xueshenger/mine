@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>minesweeper</title>
+    <link rel="stylesheet" href="./demo.css">
+    <script src="./demo.js" async></script>
 </head>
 <body>
-    <div class="wrap">
+    <div class="wrap" >
+        <!-- 开始游戏按钮 -->
         <div class="startBtn"></div>
-        <div class="mineBox"></div>
-        <div class="flagBox">
-            
+        <!-- 雷区 -->
+        <div class="minefield" ></div>
+        <!-- 剩余雷数 -->
+        <div class="flagBox" >当前剩余雷数：
+            <span class="mineCount">10  </span>
         </div>
+        <!-- 游戏结束 -->
+        <div class="alertBox">
+            <div class="gameOverImg">
+                <div class="closeBtn"></div>
+            </div>
+
+        </div>
+        
     </div>
 </body>
 </html>
